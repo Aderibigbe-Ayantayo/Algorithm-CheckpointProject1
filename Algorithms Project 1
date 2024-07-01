@@ -1,0 +1,13 @@
+Here is an algorithm that reads a sentence character by character, determines the length of the sentence, counts the number of words, and counts the number of vowels. The sentence ends with a period ('.').
+
+Algorithm Steps
+Initialize three counters: length, word_count, and vowel_count to 0.
+Initialize a variable in_word to keep track of whether the current character is part of a word.
+Read each character until a period ('.') is encountered.
+For each character:
+Increment the length counter.
+If the character is a vowel (a, e, i, o, u, A, E, I, O, U), increment the vowel_count.
+If the character is a space and in_word is true, increment the word_count and set in_word to false.
+If the character is not a space and in_word is false, set in_word to true.
+After the loop, if in_word is true, increment the word_count to account for the last word.
+Print the values of length, word_count, and vowel_count.
